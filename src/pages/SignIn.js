@@ -13,7 +13,7 @@ const SignIn = () => {
     }
     return (
         <div>
-          <div>
+          <div className='Form'>
             <label>email</label>
             <input 
             type="email" 
@@ -30,7 +30,7 @@ const SignIn = () => {
             placeholder='password'
             onChange={(e)=>setPassword(e.target.value)}
             />
-            <button onClick={handleClick}>Sign ip</button>
+            <button onClick={handleClick}>Sign in</button>
           </div>
         </div>
       )

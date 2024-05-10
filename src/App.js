@@ -25,13 +25,12 @@ function App() {
 
   if(user==null){
     return(
-      <div>
+      <div className='App'>
         <SignUp/>
-    <SignIn/>
+        <SignIn/>
       </div>
     )
   }
-
 
   return (
     <div className="App">

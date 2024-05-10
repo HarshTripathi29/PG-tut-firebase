@@ -12,7 +12,7 @@ const SignUp = () => {
     }
   return (
     <div>
-      <div>
+      <div className='Form'>
         <label>email</label>
         <input 
         type="email" 
