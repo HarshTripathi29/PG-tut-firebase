@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import SignUp from './pages/SignUp';
 import { app } from './utils/firebase';
-import {getDatabase, set, ref} from 'firebase/database';
-
-const db = getDatabase(app);
+import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
 
 function App() {
-
-const putData=()=>{
-  set(ref(db, 'users/harsh'),{
-    id : 1,
-    name : "harsh",
-    age : 22,
-  });
-};
 
   return (
     <div className="App">
     <h1>Firebase react app</h1>
-    <button onClick={putData}>put data in the realtime db</button>
+    <SignUp/>
     </div>
   );
 }
